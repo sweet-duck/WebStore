@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "P6MKwSAd0bbiclrMv5R77ZzUmM5Jt4rj3P7Bb1/MYLs=",
+  "Hash": "Xz4FD0m/gBo8T4loGRaHjiwLultPQThsJu0e5X+fbIM=",
   "Source": "WebStore",
   "BasePath": "_content/WebStore",
   "Mode": "Default",
@@ -141,6 +141,90 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\1\\obrazek.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\images\\2\\AJesteVicTobika.png",
+      "SourceId": "WebStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\",
+      "BasePath": "_content/WebStore",
+      "RelativePath": "images/2/AJesteVicTobika#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v60d5y3idx",
+      "Integrity": "ySBOdR2CehHtdtYvyA/QXa1t9gw8+t6Yh1p0twAURPQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\2\\AJesteVicTobika.png"
+    },
+    {
+      "Identity": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\images\\2\\TobiasBruzek.webp",
+      "SourceId": "WebStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\",
+      "BasePath": "_content/WebStore",
+      "RelativePath": "images/2/TobiasBruzek#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4unu5wvfia",
+      "Integrity": "1NbS/A92Iied4ZRJRGiUxywlYGCEyjcd0DMFVPXX5HU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\2\\TobiasBruzek.webp"
+    },
+    {
+      "Identity": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\images\\2\\VicTobika.png",
+      "SourceId": "WebStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\",
+      "BasePath": "_content/WebStore",
+      "RelativePath": "images/2/VicTobika#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yjwu6phjbj",
+      "Integrity": "TpqPLRpmOScyb1XBZTTvB1/OaOFf7DP3NAmNJeNWnx0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\2\\VicTobika.png"
+    },
+    {
+      "Identity": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\images\\3\\TvoricHtml.png",
+      "SourceId": "WebStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\",
+      "BasePath": "_content/WebStore",
+      "RelativePath": "images/3/TvoricHtml#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "82y24ydmws",
+      "Integrity": "EEvwBrgmUXzkcgnjnqnThj4ysY9+rwr9HNVIWHe6Pv8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\3\\TvoricHtml.png"
     },
     {
       "Identity": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\js\\site.js",
@@ -1687,6 +1771,334 @@
         {
           "Name": "integrity",
           "Value": "sha256-B9XaOkH06TDv5bZ2sZhF5Y43cyt9VmniQps0hAXHN1I="
+        }
+      ]
+    },
+    {
+      "Route": "images/2/AJesteVicTobika.png",
+      "AssetFile": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\images\\2\\AJesteVicTobika.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "358832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ySBOdR2CehHtdtYvyA/QXa1t9gw8+t6Yh1p0twAURPQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 21:13:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ySBOdR2CehHtdtYvyA/QXa1t9gw8+t6Yh1p0twAURPQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/2/AJesteVicTobika.v60d5y3idx.png",
+      "AssetFile": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\images\\2\\AJesteVicTobika.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "358832"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ySBOdR2CehHtdtYvyA/QXa1t9gw8+t6Yh1p0twAURPQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 21:13:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v60d5y3idx"
+        },
+        {
+          "Name": "label",
+          "Value": "images/2/AJesteVicTobika.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ySBOdR2CehHtdtYvyA/QXa1t9gw8+t6Yh1p0twAURPQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/2/TobiasBruzek.4unu5wvfia.webp",
+      "AssetFile": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\images\\2\\TobiasBruzek.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1NbS/A92Iied4ZRJRGiUxywlYGCEyjcd0DMFVPXX5HU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 21:07:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4unu5wvfia"
+        },
+        {
+          "Name": "label",
+          "Value": "images/2/TobiasBruzek.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1NbS/A92Iied4ZRJRGiUxywlYGCEyjcd0DMFVPXX5HU="
+        }
+      ]
+    },
+    {
+      "Route": "images/2/TobiasBruzek.webp",
+      "AssetFile": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\images\\2\\TobiasBruzek.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1NbS/A92Iied4ZRJRGiUxywlYGCEyjcd0DMFVPXX5HU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 21:07:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1NbS/A92Iied4ZRJRGiUxywlYGCEyjcd0DMFVPXX5HU="
+        }
+      ]
+    },
+    {
+      "Route": "images/2/VicTobika.png",
+      "AssetFile": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\images\\2\\VicTobika.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106878"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TpqPLRpmOScyb1XBZTTvB1/OaOFf7DP3NAmNJeNWnx0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 21:13:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TpqPLRpmOScyb1XBZTTvB1/OaOFf7DP3NAmNJeNWnx0="
+        }
+      ]
+    },
+    {
+      "Route": "images/2/VicTobika.yjwu6phjbj.png",
+      "AssetFile": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\images\\2\\VicTobika.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "106878"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TpqPLRpmOScyb1XBZTTvB1/OaOFf7DP3NAmNJeNWnx0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 21:13:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yjwu6phjbj"
+        },
+        {
+          "Name": "label",
+          "Value": "images/2/VicTobika.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TpqPLRpmOScyb1XBZTTvB1/OaOFf7DP3NAmNJeNWnx0="
+        }
+      ]
+    },
+    {
+      "Route": "images/3/TvoricHtml.82y24ydmws.png",
+      "AssetFile": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\images\\3\\TvoricHtml.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1291144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EEvwBrgmUXzkcgnjnqnThj4ysY9+rwr9HNVIWHe6Pv8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 21:08:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "82y24ydmws"
+        },
+        {
+          "Name": "label",
+          "Value": "images/3/TvoricHtml.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EEvwBrgmUXzkcgnjnqnThj4ysY9+rwr9HNVIWHe6Pv8="
+        }
+      ]
+    },
+    {
+      "Route": "images/3/TvoricHtml.png",
+      "AssetFile": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\images\\3\\TvoricHtml.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1291144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EEvwBrgmUXzkcgnjnqnThj4ysY9+rwr9HNVIWHe6Pv8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Mar 2025 21:08:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EEvwBrgmUXzkcgnjnqnThj4ysY9+rwr9HNVIWHe6Pv8="
         }
       ]
     },

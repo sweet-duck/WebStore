@@ -98,7 +98,7 @@ namespace WebStore.Controllers
             if (minRating.HasValue)
                 query = query.Where(p => DatabaseContext.Reviews.Where(r => r.ProductID == p.ID && r.DeletedAt == null).Average(r => r.Rating) >= minRating.Value);
             if (inStock)
-                query = query.Where(p => DatabaseContext.Items.Where(i => i.ProductID == p.ID && i.Status.ToLower().Contains("sklad")).Count() > 0);
+                query = query.Where(p => DatabaseContext.Items.Where(i => i.ProductID == p.ID && i.IsInStock()).Count() > 0);
             if (brand != null)
                 query = query.Where(p => p.Brand.ToLower().Contains(brand.ToLower()));
 

@@ -4,7 +4,7 @@
 
     public class CheckoutViewModel
     {
-        [Required(ErrorMessage = "Zadejte své celé jméno!")]
+    /*    [Required(ErrorMessage = "Zadejte své celé jméno!")]
         public string FullName { get; set; }
 
         [Required(ErrorMessage = "Zadejte E-Mailovou Adresu!")]
@@ -15,7 +15,7 @@
         public string Phone { get; set; }
 
         [Required(ErrorMessage = "Zadejte Adresu doručení!")]
-        public string Address { get; set; }
+        public string Address { get; set; }*/
 
         [Required(ErrorMessage = "Zvolte způsob doručení.")]
         public string DeliveryMethod { get; set; }

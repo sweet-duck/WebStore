@@ -1,6 +1,7 @@
 ﻿@model List<WebStore.Models.Cart.CartItem>
 @{
     ViewData["Title"] = "Nákupní košík";
+    bool isLoggedIn = ViewBag.IsAuthenticated == true;
 }
 
 <div class="container py-4">
@@ -19,13 +20,11 @@
     }
     else
     {
-        <!-- Obalíme do card pro modernější vzhled -->
         <div class="card shadow-sm border-0">
             <div class="card-header bg-primary text-white">
                 Položky v košíku
             </div>
             <div class="card-body p-4">
-                <!-- Tabulka s minimálním orámováním, hover řádky -->
                 <div class="table-responsive">
                     <table class="table table-borderless table-hover align-middle">
                         <thead class="table-light">
@@ -69,7 +68,6 @@
                     </table>
                 </div>
 
-                <!-- Řádek se součtem -->
                 <div class="d-flex justify-content-end align-items-center mt-2">
                     <h5 class="me-3 mb-0">Celkem:</h5>
                     <h4 class="text-primary mb-0">
@@ -79,7 +77,6 @@
 
                 <hr />
 
-                <!-- Ovládací tlačítka dole -->
                 <div class="d-flex justify-content-between mt-3">
                     <form asp-action="Clear" method="post">
                         <button type="submit" class="btn btn-warning">
@@ -90,9 +87,20 @@
                         <a asp-controller="Home" asp-action="Index" class="btn btn-secondary me-2">
                             <i class="fas fa-arrow-left"></i> Pokračovat v nákupu
                         </a>
-                        <a asp-controller="Order" asp-action="Checkout" class="btn btn-success">
-                            Pokračovat k objednávce <i class="fas fa-arrow-right"></i>
-                        </a>
+
+
+                        @if (isLoggedIn)
+                        {
+                            <a asp-controller="Order" asp-action="Checkout" class="btn btn-success">
+                                Pokračovat k objednávce <i class="fas fa-arrow-right"></i>
+                            </a>
+                        }
+                        else
+                        {
+                            <a asp-controller="Auth" asp-action="Login" class="btn btn-warning">
+                                Přihlásit se
+                            </a>
+                        }
                     </div>
                 </div>
             </div>

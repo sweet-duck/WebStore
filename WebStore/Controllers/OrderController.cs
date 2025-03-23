@@ -3,14 +3,15 @@ using WebStore.Models;
 using WebStore.Database;
 using WebStore.Helpers;
 using WebStore.Models.Cart;
+using WebStore.Entities;
 
 namespace WebStore.Controllers
 {
-    public class OrderController : Controller
+    public class OrderController : BaseController
     {
         private readonly DatabaseContext _db;
 
-        public OrderController(DatabaseContext db)
+        public OrderController(DatabaseContext db) : base(db)
         {
             _db = db;
         }
@@ -18,9 +19,22 @@ namespace WebStore.Controllers
         [HttpGet]
         public IActionResult Checkout()
         {
-            // Načíst položky košíku ze session
             var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart")
                        ?? new List<CartItem>();
+
+            cart = cart.Where(x =>
+            {
+                var query = _db.Items.Where(item => item.ProductID == x.ProductId).AsEnumerable().Where(item => item.IsInStock());
+
+                if (query == null || !query.Any()) return false;
+
+                x.Quantity = Math.Min(x.Quantity, query.Count());
+                return true;
+            }).ToList();
+
+            HttpContext.Session.SetObjectAsJson("Cart", cart);
+
+            if (cart.Count == 0) return RedirectToAction("Index", "Home");
 
             var model = new CheckoutViewModel
             {
@@ -35,34 +49,36 @@ namespace WebStore.Controllers
             var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart")
                        ?? new List<CartItem>();
 
-            if (!ModelState.IsValid)
-            {
-                model.CartItems = cart;
-                return View(model);
-            }
+            /* if (!ModelState.IsValid)
+             {
+                 Console.WriteLine("Někde nastala chyba?!");
+                 model.CartItems = cart;
+                 return View(model);
+             }*/
+
+            Console.WriteLine(model);
 
             if (!cart.Any()) return RedirectToAction("Index", "Home");
-            
 
-            // Tady vytvoříte entitu Order, uložíte do DB atd.
-            // Např.:
-            // var order = new Order { FullName = model.FullName, Email = model.Email, ... };
-            // _db.Orders.Add(order);
-            // _db.SaveChanges();
+            foreach (var x in cart)
+            {
+                var items = _db.Items.Where(item => item.ProductID == x.ProductId).AsEnumerable().Where(item => item.IsInStock()).ToList();
 
-            // Vyčistit košík
+                foreach (var item in items)
+                {
+                    item.Status = "Na cestě";
+
+                    int userId = int.Parse(ViewBag.UserID);
+
+                    var order = new Order(userId, item.ID, model.DeliveryMethod, model.PaymentMethod);
+                    _db.Orders.Add(order);
+                }
+            }
+
+            _db.SaveChanges();
+
             HttpContext.Session.Remove("Cart");
-
-            // Přejít na stránku s poděkováním / potvrzením
-            return RedirectToAction("Confirmation", new { /* orderId = order.Id */ });
-        }
-
-        public IActionResult Confirmation(int orderId)
-        {
-            // Můžete načíst objednávku z DB a zobrazit
-            // var order = _db.Orders.Find(orderId);
-            // if(order == null) ...
-            return View();
+            return RedirectToAction("Index", "Home");
         }
     }
 }

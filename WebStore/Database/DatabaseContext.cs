@@ -10,6 +10,8 @@ namespace WebStore.Database
         public DbSet<Product> Products { get; set; }
         public DbSet<Review> Reviews { get; set; }
         public DbSet<Item> Items { get; set; }
+        public DbSet<Order> Orders { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

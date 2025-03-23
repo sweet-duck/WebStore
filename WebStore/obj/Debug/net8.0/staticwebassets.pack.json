@@ -21,6 +21,22 @@
       "PackagePath": "staticwebassets\\images\\1\\obrazek.jfif"
     },
     {
+      "Id": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\images\\2\\AJesteVicTobika.png",
+      "PackagePath": "staticwebassets\\images\\2\\AJesteVicTobika.png"
+    },
+    {
+      "Id": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\images\\2\\TobiasBruzek.webp",
+      "PackagePath": "staticwebassets\\images\\2\\TobiasBruzek.webp"
+    },
+    {
+      "Id": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\images\\2\\VicTobika.png",
+      "PackagePath": "staticwebassets\\images\\2\\VicTobika.png"
+    },
+    {
+      "Id": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\images\\3\\TvoricHtml.png",
+      "PackagePath": "staticwebassets\\images\\3\\TvoricHtml.png"
+    },
+    {
       "Id": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -12,25 +12,25 @@
         <div class="col-md-6 mb-4">
             <h4>Doručovací údaje</h4>
             <form asp-action="Checkout" method="post">
-                <div class="mb-3">
-                    <label for="FullName" class="form-label">Jméno a příjmení</label>
-                    <input asp-for="FullName" class="form-control" />
-                    <span asp-validation-for="FullName" class="text-danger"></span>
+                <!--          <div class="mb-3">
+                    <label class="form-label">Jméno a příjmení</label>
+                    <input class="form-control" />
+                    <span class="text-danger"></span>
                 </div>
                 <div class="mb-3">
-                    <label for="Email" class="form-label">E-mail</label>
-                    <input asp-for="Email" type="email" class="form-control" />
-                    <span asp-validation-for="Email" class="text-danger"></span>
+                    <label class="form-label">E-mail</label>
+                    <input class="form-control" />
+                    <span class="text-danger"></span>
                 </div>
                 <div class="mb-3">
-                    <label for="Phone" class="form-label">Telefon</label>
-                    <input asp-for="Phone" class="form-control" />
-                    <span asp-validation-for="Phone" class="text-danger"></span>
-                </div>
+                    <label class="form-label">Telefon</label>
+                    <input class="form-control" />
+                    <span class="text-danger"></span>
+                </div> -->
                 <div class="mb-3">
-                    <label for="Address" class="form-label">Adresa</label>
-                    <input asp-for="Address" class="form-control" />
-                    <span asp-validation-for="Address" class="text-danger"></span>
+                    <label class="form-label">Adresa</label>
+                    <input class="form-control" />
+                    <span  class="text-danger"></span>
                 </div>
                 <div class="mb-3">
                     <label for="DeliveryMethod" class="form-label">Způsob doručení</label>
@@ -53,8 +53,6 @@
                     </select>
                     <span asp-validation-for="PaymentMethod" class="text-danger"></span>
                 </div>
-                <!-- Další pole pro PSČ, město, zemi apod. -->
-                <!-- Lze přidat i volbu dopravy/platby, apod. -->
 
                 <button type="submit" class="btn btn-success">
                     Potvrdit nákup
@@ -62,7 +60,6 @@
             </form>
         </div>
 
-        <!-- Rekapitulace košíku vpravo -->
         <div class="col-md-6">
             <h4>Rekapitulace objednávky</h4>
             <div class="card shadow-sm border-0">

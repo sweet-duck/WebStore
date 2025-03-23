@@ -37,5 +37,12 @@ namespace WebStore.Entities
             Status = status;
             WarehouseLocation = warehouseLocation;
         }
+
+        // Musí být použit až v IEnumerable
+        public Boolean IsInStock()
+        {
+            if (Status == null) return false;
+            return Status.Contains("sklad", StringComparison.CurrentCultureIgnoreCase);
+        }
     }
 }

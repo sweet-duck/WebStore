@@ -2,6 +2,10 @@ wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\1\images.jpg
 wwwroot\images\1\obrazek.jfif
+wwwroot\images\2\AJesteVicTobika.png
+wwwroot\images\2\TobiasBruzek.webp
+wwwroot\images\2\VicTobika.png
+wwwroot\images\3\TvoricHtml.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
