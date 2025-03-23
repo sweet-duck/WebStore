@@ -2,7 +2,6 @@ wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\1\images.jpg
 wwwroot\images\1\obrazek.jfif
-wwwroot\images\1\wt_launcher_1.0.3.447-rrkr4tiq8.exe
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

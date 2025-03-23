@@ -35,6 +35,13 @@
                             }
                         }
 
+						@if (ViewBag.Role != null && ViewBag.Role.ToLower() == "admin")
+						{
+							<li class="nav-item">
+								<a class="nav-link" asp-controller="AdminCategory" asp-action="Index">Admin Panel</a>
+							</li>
+						}
+
                     </ul>
                     <div class="search-container">
                         <form asp-controller="Home" asp-action="Search" method="post">

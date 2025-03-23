@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ivkxSiFPF31JEGOd4wpa3Z9DMVbFUQOuSz51pieMJTY=",
+  "Hash": "P6MKwSAd0bbiclrMv5R77ZzUmM5Jt4rj3P7Bb1/MYLs=",
   "Source": "WebStore",
   "BasePath": "_content/WebStore",
   "Mode": "Default",
@@ -141,27 +141,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\1\\obrazek.jfif"
-    },
-    {
-      "Identity": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\images\\1\\wt_launcher_1.0.3.447-rrkr4tiq8.exe",
-      "SourceId": "WebStore",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\",
-      "BasePath": "_content/WebStore",
-      "RelativePath": "images/1/wt_launcher_1.0.3.447-rrkr4tiq8#[.{fingerprint}]?.exe",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "jh4c47e4kc",
-      "Integrity": "SX5mIq6lFxiwc56ny5S639c3Hyoq+adFnefb/zpA+q8=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\1\\wt_launcher_1.0.3.447-rrkr4tiq8.exe"
     },
     {
       "Identity": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\js\\site.js",
@@ -1708,88 +1687,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-B9XaOkH06TDv5bZ2sZhF5Y43cyt9VmniQps0hAXHN1I="
-        }
-      ]
-    },
-    {
-      "Route": "images/1/wt_launcher_1.0.3.447-rrkr4tiq8.exe",
-      "AssetFile": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\images\\1\\wt_launcher_1.0.3.447-rrkr4tiq8.exe",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "13141576"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/vnd.microsoft.portable-executable"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SX5mIq6lFxiwc56ny5S639c3Hyoq+adFnefb/zpA+q8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 14:38:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-SX5mIq6lFxiwc56ny5S639c3Hyoq+adFnefb/zpA+q8="
-        }
-      ]
-    },
-    {
-      "Route": "images/1/wt_launcher_1.0.3.447-rrkr4tiq8.jh4c47e4kc.exe",
-      "AssetFile": "C:\\Users\\david\\Downloads\\WebStore\\WebStore\\WebStore\\wwwroot\\images\\1\\wt_launcher_1.0.3.447-rrkr4tiq8.exe",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "13141576"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/vnd.microsoft.portable-executable"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SX5mIq6lFxiwc56ny5S639c3Hyoq+adFnefb/zpA+q8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 14:38:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "jh4c47e4kc"
-        },
-        {
-          "Name": "label",
-          "Value": "images/1/wt_launcher_1.0.3.447-rrkr4tiq8.exe"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SX5mIq6lFxiwc56ny5S639c3Hyoq+adFnefb/zpA+q8="
         }
       ]
     },

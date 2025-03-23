@@ -48,18 +48,6 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-B9XaOkH06TDv5bZ2sZhF5Y43cyt9VmniQps0hAXHN1I="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"15490"},{"Name":"Content-Type","Value":"image/pjpeg"},{"Name":"ETag","Value":"\u0022B9XaOkH06TDv5bZ2sZhF5Y43cyt9VmniQps0hAXHN1I=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 11:28:11 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WebStore/images/1/wt_launcher_1.0.3.447-rrkr4tiq8.exe">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1\wt_launcher_1.0.3.447-rrkr4tiq8.exe'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SX5mIq6lFxiwc56ny5S639c3Hyoq\u002BadFnefb/zpA\u002Bq8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"13141576"},{"Name":"Content-Type","Value":"application/vnd.microsoft.portable-executable"},{"Name":"ETag","Value":"\u0022SX5mIq6lFxiwc56ny5S639c3Hyoq\u002BadFnefb/zpA\u002Bq8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 14:38:26 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/WebStore/images/1/wt_launcher_1.0.3.447-rrkr4tiq8.jh4c47e4kc.exe">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1\wt_launcher_1.0.3.447-rrkr4tiq8.exe'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"jh4c47e4kc"},{"Name":"integrity","Value":"sha256-SX5mIq6lFxiwc56ny5S639c3Hyoq\u002BadFnefb/zpA\u002Bq8="},{"Name":"label","Value":"_content/WebStore/images/1/wt_launcher_1.0.3.447-rrkr4tiq8.exe"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"13141576"},{"Name":"Content-Type","Value":"application/vnd.microsoft.portable-executable"},{"Name":"ETag","Value":"\u0022SX5mIq6lFxiwc56ny5S639c3Hyoq\u002BadFnefb/zpA\u002Bq8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 13 Mar 2025 14:38:26 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WebStore/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
