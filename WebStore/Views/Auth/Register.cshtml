@@ -1,0 +1,43 @@
+﻿@using WebStore.Models.Auth
+@model RegisterViewModel
+@{
+    ViewData["Title"] = "Registrace";
+}
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-@TempData["MessageType"] mt-2">
+        @TempData["Message"]
+    </div>
+}
+
+<form asp-action="Register" class="mt-2 mb-2">
+    <div class="row justify-content-center mb-2">
+        <label asp-for="Username" class="col-sm-1 col-form-label">Username</label>
+        <div class="col-sm-4">
+            <input asp-for="Username" type="text" class="form-control">
+            <span asp-validation-for="Username" class="text-danger xinvalid-feedback"></span>
+        </div>
+    </div>
+    <div class="row justify-content-center mb-2">
+        <label asp-for="Password" class="col-sm-1 col-form-label">Password</label>
+        <div class="col-sm-4">
+            <input asp-for="Password" type="password" class="form-control">
+            <span asp-validation-for="Password" class="text-danger xinvalid-feedback"></span>
+        </div>
+    </div>
+    <div class="row justify-content-center mb-2">
+        <label asp-for="PasswordAgain" class="col-sm-1 col-form-label">Again Password</label>
+        <div class="col-sm-4">
+            <input asp-for="PasswordAgain" type="password" class="form-control">
+            <span asp-validation-for="PasswordAgain" class="text-danger xinvalid-feedback"></span>
+        </div>
+    </div>
+    <div class="row justify-content-center mb-2">
+        <div class="col-5">
+            <button type="submit" class="btn btn-sm btn-success w-100">
+                Zaregistrovat se
+            </button>
+        </div>
+    </div>
+</form>

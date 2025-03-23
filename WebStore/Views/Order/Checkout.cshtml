@@ -1,0 +1,113 @@
+﻿@model WebStore.Models.CheckoutViewModel
+@{
+    ViewData["Title"] = "Dokončení objednávky";
+}
+
+<div class="container py-4">
+    <h2><i class="fas fa-shopping-bag"></i> Dokončení objednávky</h2>
+    <hr />
+
+    <!-- Formulář pro zadání doručovacích údajů -->
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <h4>Doručovací údaje</h4>
+            <form asp-action="Checkout" method="post">
+                <div class="mb-3">
+                    <label for="FullName" class="form-label">Jméno a příjmení</label>
+                    <input asp-for="FullName" class="form-control" />
+                    <span asp-validation-for="FullName" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="Email" class="form-label">E-mail</label>
+                    <input asp-for="Email" type="email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="Phone" class="form-label">Telefon</label>
+                    <input asp-for="Phone" class="form-control" />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="Address" class="form-label">Adresa</label>
+                    <input asp-for="Address" class="form-control" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="DeliveryMethod" class="form-label">Způsob doručení</label>
+                    <select asp-for="DeliveryMethod" class="form-select">
+                        <option value="">-- Vyberte způsob doručení --</option>
+                        <option value="Osobní odběr">Osobní odběr</option>
+                        <option value="Kurýr">Doprava kurýrem</option>
+                        <option value="Zásilkovna">Zásilkovna</option>
+                    </select>
+                    <span asp-validation-for="DeliveryMethod" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="PaymentMethod" class="form-label">Způsob platby</label>
+                    <select asp-for="PaymentMethod" class="form-select">
+                        <option value="">-- Vyberte způsob platby --</option>
+                        <option value="Hotově">Platba v hotovosti</option>
+                        <option value="Dobírka">Dobírka</option>
+                        <option value="Převodem">Převodem na účet</option>
+                    </select>
+                    <span asp-validation-for="PaymentMethod" class="text-danger"></span>
+                </div>
+                <!-- Další pole pro PSČ, město, zemi apod. -->
+                <!-- Lze přidat i volbu dopravy/platby, apod. -->
+
+                <button type="submit" class="btn btn-success">
+                    Potvrdit nákup
+                </button>
+            </form>
+        </div>
+
+        <!-- Rekapitulace košíku vpravo -->
+        <div class="col-md-6">
+            <h4>Rekapitulace objednávky</h4>
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    @if (Model.CartItems == null || !Model.CartItems.Any())
+                    {
+                        <p>Košík je prázdný.</p>
+                    }
+                    else
+                    {
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Produkt</th>
+                                    <th>Cena</th>
+                                    <th>Množství</th>
+                                    <th>Celkem</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.CartItems)
+                                {
+                                    <tr>
+                                        <td>@item.ProductName</td>
+                                        <td>@item.Price.ToString("C")</td>
+                                        <td>@item.Quantity</td>
+                                        <td>@(item.Price * item.Quantity).ToString("C")</td>
+                                    </tr>
+                                }
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3" class="text-end fw-bold">Celkem</td>
+                                    <td class="fw-bold">@Model.CartItems.Sum(i => i.Total).ToString("C")</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+

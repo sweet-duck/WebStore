@@ -1,0 +1,46 @@
+﻿@using WebStore.Entities
+@using WebStore.Helpers
+
+@{
+    ViewData["Title"] = "WebStore - Nejlepší e-shop s elektronikou";
+    var categories = ViewBag.Categories as List<Category>;
+    var productsInSale = ViewBag.FeaturedProducts as List<Product>;
+}
+
+<div class="container py-5">
+    <!-- Hero sekce -->
+    <div class="row mb-5 text-center">
+        <div class="col">
+            <h1 class="display-4 fw-bold">Vítejte v našem WebStore</h1>
+            <p class="lead text-muted">Objevte širokou nabídku produktů za nejlepší ceny.</p>
+        </div>
+    </div>
+
+    <!-- Kategorie -->
+    <div class="row justify-content-center g-4">
+        @if (categories == null || !categories.Any())
+        {
+            <div class="col-12">
+                <div class="alert alert-info text-center">
+                    Nebyly nalezeny žádné kategorie.
+                </div>
+            </div>
+        }
+        else
+        {
+            @foreach (var category in categories)
+            {
+                <div class="col-sm-8 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="bg-light border border-5 p-4 text-center">
+                        <h4 class="fw-bold">@category.Name</h4>
+                        <p class="text-muted small">@category.Description</p>
+                        <a href="@Url.Action("List", "Category", new { id = category.ID })"
+                           class="btn btn-primary btn-sm mt-2">
+                            Zobrazit produkty
+                        </a>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>

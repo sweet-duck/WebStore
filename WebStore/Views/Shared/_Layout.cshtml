@@ -1,0 +1,99 @@
+﻿@using WebStore.Entities
+<!DOCTYPE html>
+<html lang="cs" data-bs-theme="light">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Web Store</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebChat.styles.css" asp-append-version="true" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-..."
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" asp-controller="Home" asp-action="Index">Web Store</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             
+                        @if (ViewBag.Categories != null)
+                        {
+                            foreach (Category category in ViewBag.Categories)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Category" asp-action="List" asp-route-id="@category.ID">
+                                        @category.Name
+                                    </a>
+                                </li>
+                            }
+                        }
+
+                    </ul>
+                    <div class="search-container">
+                        <form asp-controller="Home" asp-action="Search" method="post">
+                            @if(ViewBag.Search != null)
+                            {
+                                <input id="searchBar" type="text" value="@ViewBag.Search" placeholder="Vyhledat.." name="search">
+                            }
+                            else
+                            {
+                                <input id="searchBar" type="text" placeholder="Vyhledat.." name="search">
+                            }
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item me-3">
+                            <a class="nav-link" asp-controller="Cart" asp-action="Index">
+                                <i class="fas fa-shopping-cart"></i> Košík
+                            </a>
+                        </li>
+                        @if (ViewBag.IsAuthenticated == true)
+                        {
+                            <li class="nav-item">
+                                <span class="navbar-text ms-3"><i class="fas fa-user"></i> @ViewBag.Username</span>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <a class="btn btn-outline-danger btn-sm" asp-controller="Auth" asp-action="Logout">Odhlásit se</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="btn btn-outline-primary btn-sm me-2" asp-controller="Auth" asp-action="Login">Přihlásit</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-outline-secondary btn-sm" asp-controller="Auth" asp-action="Register">Registrace</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container my-4">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="bg-light py-3 border-top bottom-100">
+        <div class="container text-center">
+            &copy; 2025 - Web Store - <a asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+</body>
+</html>
