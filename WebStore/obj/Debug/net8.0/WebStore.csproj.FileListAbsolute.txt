@@ -888,3 +888,4 @@ C:\Users\david\Downloads\WebStore\WebStore\WebStore\obj\Debug\net8.0\refint\WebS
 C:\Users\david\Downloads\WebStore\WebStore\WebStore\obj\Debug\net8.0\WebStore.pdb
 C:\Users\david\Downloads\WebStore\WebStore\WebStore\obj\Debug\net8.0\WebStore.genruntimeconfig.cache
 C:\Users\david\Downloads\WebStore\WebStore\WebStore\obj\Debug\net8.0\ref\WebStore.dll
+C:\Users\david\Downloads\WebStore\WebStore\WebStore\obj\Debug\net8.0\WebStore.sourcelink.json
